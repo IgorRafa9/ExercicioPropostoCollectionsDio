@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Questão1 {
+public class QuestÃ£o1 {
 
 	public static void main(String[] args) {
 		List <Double> temperatura = new ArrayList<>(); 
@@ -18,7 +18,8 @@ public class Questão1 {
 		List <String> mes = new ArrayList<>();
 		mes.add("Janeiro");
 		mes.add("Fevereiro");
-		mes.add("Março");
+		mes.add("MarÃ§o");
+		System.out.println("Alou");
 		mes.add("Abril");
 		mes.add("Maio");
 		mes.add("Junho");
@@ -32,28 +33,28 @@ public class Questão1 {
 			soma+=next;
 			media = soma/temperatura.size();
 		}
-		System.out.printf("Média semestral: %.1f°C\n",media);	
+		System.out.printf("MÃ©dia semestral: %.1fÂ°C\n",media);	
 		for(Double t:temperatura) {
 			if(t>media) {
 				int index = temperatura.indexOf(t);
 				switch(index) {
 					case 0:
-						System.out.println((index + 1)+" - Janeiro: "+t+"°C");
+						System.out.println((index + 1)+" - Janeiro: "+t+"Â°C");
 						break;
 					case 1:
-						System.out.println((index + 1)+" - Fevereiro: "+t+"°C");
+						System.out.println((index + 1)+" - Fevereiro: "+t+"Â°C");
 						break;
 					case 2: 
-						System.out.println((index + 1)+" - Março: "+t+"°C");
+						System.out.println((index + 1)+" - MarÃ§o: "+t+"Â°C");
 						break;
 					case 3:
-						System.out.println((index + 1)+" - Abril: "+t+"°C");
+						System.out.println((index + 1)+" - Abril: "+t+"Â°C");
 						break;
 					case 4:
-						System.out.println((index + 1)+" - Maio: "+t+"°C");
+						System.out.println((index + 1)+" - Maio: "+t+"Â°C");
 						break;
 					case 5:
-						System.out.println((index + 1)+" - Junho: "+t+"°C");
+						System.out.println((index + 1)+" - Junho: "+t+"Â°C");
 				}
 			}		
 		}
