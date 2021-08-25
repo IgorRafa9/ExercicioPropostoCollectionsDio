@@ -19,7 +19,6 @@ public class Questão1 {
 		mes.add("Janeiro");
 		mes.add("Fevereiro");
 		mes.add("Março");
-		System.out.println("Alou");
 		mes.add("Abril");
 		mes.add("Maio");
 		mes.add("Junho");
