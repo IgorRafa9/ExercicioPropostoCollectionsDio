@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Quest„o1 {
+public class Quest√£o1 {
 
 	public static void main(String[] args) {
 		Set<String> cores = new HashSet<>() {
@@ -26,15 +26,15 @@ public class Quest„o1 {
 				add(new String("Roxo"));
 			}
 		};
-		System.out.println("Cores do Arco-Õris: ");
+		System.out.println("Cores do Arco-√çris: ");
 		for(String c : cores) {
 			System.out.println(c);
 		}
 		System.out.println("==============================================");
-		System.out.println("Quantidade de cores existentes no Arco-Õris: "+cores.size()+" cores");
+		System.out.println("Quantidade de cores existentes no Arco-√çris: "+cores.size()+" cores");
 		System.out.println("==============================================");
 		
-		System.out.println("Ordem alfabÈtica: ");
+		System.out.println("Ordem alfab√©tica: ");
 		Set<String> cores2 = new TreeSet<>(cores);
 		for(String c2 : cores2) {
 			System.out.println(c2);
@@ -48,14 +48,14 @@ public class Quest„o1 {
 			System.out.println(c4);
 		}
 		System.out.println("==============================================");
-		System.out.println("Exibir todas as cores que comeÁam com a letra 'V': ");
+		System.out.println("Exibir todas as cores que come√ßam com a letra 'V': ");
 		 for (String cL: cores) {
 	            if(cL.startsWith("V")) {
 	            	System.out.println(cL);
 	            }
 	        }
 		 System.out.println("==============================================");
-		 System.out.println("Remover todas as cores que comeÁam com 'V': ");
+		 System.out.println("Remover todas as cores que come√ßam com 'V': ");
 		 Iterator <String> iterator = cores.iterator();
 		 while (iterator.hasNext()) {
 			 if(iterator.next().startsWith("V")) {
@@ -65,6 +65,12 @@ public class Quest„o1 {
 		 for(String cL2 : cores) {
 			 System.out.println(cL2);
 		 }
+		 System.out.println("==============================================");
+		 System.out.println("Apague tudo: ");
+		 cores.clear();
+		 
+		 System.out.println("==============================================");
+		 System.out.println("O conjunto est√° vazio: "+cores.isEmpty());
 	}
 		
 }
